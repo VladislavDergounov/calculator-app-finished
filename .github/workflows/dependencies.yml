@@ -15,6 +15,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build the code
+        run: npm run build
+      
 
       - name: Verify - list directories and contents
         run: ls -alhR
