@@ -22,5 +22,5 @@ jobs:
       - name: Bundle the code into a zip
         run: zip -r app.zip .
 
-      - name: Verify - list directories and contents
-        run: ls -alhR
+      - name: Run unit tests
+        run: npm test
