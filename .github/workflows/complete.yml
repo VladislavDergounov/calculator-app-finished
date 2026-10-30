@@ -27,3 +27,5 @@ jobs:
 
       - name: Better Test Reports Action
         uses: mridang/action-test-reporter@v3.0.0
+        with:
+          coverage-path: coverage/lcov.info
